@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recommendations</title>
+    <link rel="stylesheet" href="/static/css/styles.css">
+</head>
+
+<body>
+    <h1>Recommendations for {{ customer_id }}</h1>
+    {% if error %}
+    <p style="color: red;">{{ error }}</p>
+    {% else %}
+    <center>
+        <ul>
+            {% for product in recommendations %}
+            <li>{{ product }}</li>
+            {% endfor %}
+        </ul>
+        {% endif %}
+        <a href="/" class="button">Back to Home</a>
+    </center>
+</body>
+
+</html>

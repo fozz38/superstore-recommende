@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Recommendations</title>
+    <link rel="stylesheet" href="/static/css/styles.css">
+</head>
+
+<body>
+    <div id="container">
+        <h1>Product Recommendations</h1>
+        <form action="/recommend" method="POST">
+            <label for="customer_id"> Customer ID: </label>
+            <input type="text" id="customer_id" name="customer_id" required placeholder="Enter Customer ID">
+            <button type="submit">Get Recommendations</button>
+        </form>
+    </div>
+</body>
+
+</html>
